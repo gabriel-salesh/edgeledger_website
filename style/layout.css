@@ -1,0 +1,35 @@
+/* F L E X    C O L U M N S */
+.flex-columns .row {
+  display: flex;
+}
+
+.flex-columns .column {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.fit-image-in-flex {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-content-column {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.text-content-wrapper {
+  padding: 20px;
+}
+
+.text-content-column p {
+  margin-bottom: 20px;
+}
+
+@media(max-width: 768px) {
+  .flex-columns .row {
+    flex-direction: column;
+  }
+}

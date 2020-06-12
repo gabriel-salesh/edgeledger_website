@@ -1,0 +1,155 @@
+/* Loads when media="screen and (max-width: 768px)" */
+
+/* Navbar */
+.navbar-content {
+  flex-direction: column;
+}
+
+
+/* About us */
+.about-cards-wrapper {
+  display: block;
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.about-card-icon {
+  margin-bottom: 0;
+  margin-right: 20px;
+}
+
+.card-text {
+  text-align: start;
+}
+
+.card-text h3 {
+  margin-bottom: 5px;
+}
+
+/* content/image LAYOUT */
+.image-content-layout {
+  flex-direction: column;
+}
+
+.image-side {
+  display: none;
+}
+
+/* content/image BLOG LAYOUT */
+.blog-layout {
+  flex-direction: row;
+}
+
+.blog-layout .image-side {
+  display: block;
+}
+
+.blog-layout .content-side {
+  flex: 2;
+}
+
+/* Cases */
+.cases-gallery > * {
+  flex-basis: 50%;
+}
+
+@media (max-width: 685px) {
+  /* Team */
+  #team .row .column {
+    flex-direction: column;
+  }
+
+  .team-member-profile-card {
+    margin-right: 0px;
+    margin-bottom: 35px;
+    padding: 0 100px 25px 100px;
+    border-bottom: 2px solid #e8e8e8;
+  }
+
+  .team-member-profile-card:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0; 
+    padding-right: 100px;
+  }
+
+  .team-members-profiles {
+    flex-direction: column;
+  }
+
+  .team-members-profiles > div {
+    margin-right: 0px;
+    margin-bottom: 35px;
+    padding: 0 100px 25px 100px;
+    border-bottom: 2px solid #e8e8e8;
+  }
+
+  .team-members-profiles > div:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Nav logo */
+  .logo {
+    font-size: 25px;
+    padding-top: 10px;
+  }
+
+  .navbar-content {
+    flex-wrap: nowrap;
+  }
+
+  .showcase-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .showcase-content .lead {
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    padding-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu .menu-item a {
+    padding: 0 10px 5px 0;
+  }
+
+  .image-content-layout .content-side {
+    text-align: center;
+    align-items: center;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  /* About us */
+  .about-card {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .card-text {
+    text-align: center;
+  }
+
+  .about-card-icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* Cases */
+  .cases-gallery {
+    flex-direction: column;
+  }
+}
